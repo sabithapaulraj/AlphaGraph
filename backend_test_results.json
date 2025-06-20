@@ -1,0 +1,99 @@
+{
+  "total_tests": 7,
+  "passed_tests": 7,
+  "failed_tests": 0,
+  "test_details": [
+    {
+      "name": "Root Endpoint",
+      "status": "PASSED",
+      "duration": 0.09,
+      "details": {
+        "success": true,
+        "status_code": 200,
+        "response": {
+          "message": "AlphaGraph Financial Analysis API is running"
+        }
+      }
+    },
+    {
+      "name": "Health Endpoint",
+      "status": "PASSED",
+      "duration": 0.03,
+      "details": {
+        "success": true,
+        "status_code": 200,
+        "response": {
+          "status": "healthy",
+          "gemini_configured": true
+        }
+      }
+    },
+    {
+      "name": "Companies Endpoint",
+      "status": "PASSED",
+      "duration": 0.04,
+      "details": {
+        "success": true,
+        "status_code": 200,
+        "company_count": 25,
+        "sample_company": {
+          "symbol": "AAPL",
+          "name": "Apple Inc."
+        }
+      }
+    },
+    {
+      "name": "Demo Data Population",
+      "status": "PASSED",
+      "duration": 0.81,
+      "details": {
+        "success": true,
+        "status_code": 200,
+        "analyses_count": 4,
+        "message": "Successfully populated 4 sample analyses"
+      }
+    },
+    {
+      "name": "AI Analysis",
+      "status": "PASSED",
+      "duration": 0.2,
+      "details": {
+        "success": true,
+        "status_code": 200,
+        "sentiment_score": 0.0,
+        "sentiment_label": "NEUTRAL",
+        "impact_score": 5.0,
+        "mentioned_companies": [],
+        "key_points_count": 1,
+        "has_key_points": true
+      }
+    },
+    {
+      "name": "Recent News Retrieval",
+      "status": "PASSED",
+      "duration": 0.79,
+      "details": {
+        "success": true,
+        "status_code": 200,
+        "news_count": 9,
+        "sample_item": {
+          "headline": "Fed Signals Potential Rate Cut as Inflation Cools",
+          "sentiment_label": "NEUTRAL",
+          "impact_score": 5.0
+        }
+      }
+    },
+    {
+      "name": "Trending Analysis",
+      "status": "PASSED",
+      "duration": 0.7,
+      "details": {
+        "success": true,
+        "status_code": 200,
+        "trending_companies_count": 0,
+        "analysis_period": "24h",
+        "total_analyses": 13
+      }
+    }
+  ]
+}
